@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*::before,*::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;margin: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/*-----------------------------------------------------*/
+
+
+body{
+    font-family: sans-serif;
+    background-color: #FED8D8;
+}
+
+main,.main-block{
+    background-color: #ffffff;
+    border: solid 2px #E5E5E5;
+}
+
+main{
+    max-width: 960px;
+    height: 1740px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-block{
+    height: 1270px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.main-title{
+    font-size: 28px;
+    padding-top: 15px;
+}
+
+.main-subtitle{
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 15px;
+}
+
+.main-picture > img{
+    max-width: 720px;
+    padding-top: 15px;
+}
+
+/* Общие стиили для: текста под картинкой, для текста под ремаркой и для мини-текста */
+
+.text__under-picture,.text__under-remark,.mini-text{
+    font-weight: 300;
+    font-family:'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 25px;
+}
+
+.text__under-picture{
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.remark-convert{
+    border-left: solid 3px #BB7776;
+}
+
+.remark{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.text__under-remark{
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 15px;
+}
+
+.mini-title{
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 30px;
+}
+
+.mini-text{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer{
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 2px #000000;
+    border-bottom: solid 2px #000000;
+}
+
+.instagram{
+    max-width: 32px;
+}
+
+.footer-icon{}
+
+.footer-text{
+    font-size: 18px;
+}
+
+.views{
+    padding-top: 15px;
+}
+
+/* ---------- SLIDER ---------- */
+
+.slider{
+    position: relative;
+    padding: 0px 60px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.slider .slick-arrow{
+    position: absolute;
+    top:50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 60px;
+}
+
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url(../images/angle-left-solid.svg) 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url(../images/angle-right-solid.svg) 0 0 / 100% no-repeat;
+}
+
+.slider .slick-dots{
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    margin: 0px 10px;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 1px solid #000000;
+}
+
+.slider__item > img{
+    max-width: 250px;
+}
+
+.slick-slider{
+
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* ---------- COMMENT ---------- */
+
+.comment{
+    font-size: 22px;
+    text-align: center;
+    height: 110px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-top: 45px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: solid 2px #E5E5E5;
+}
+
+.comment > a{
+    color: #C06969;
+}

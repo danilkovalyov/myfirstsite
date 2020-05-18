@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registr</title>
+    <link rel="stylesheet" href="css/style(registr).css">
+</head>
+<body>
+    <div class="loginbox">
+        <img src="images/avatar.png" class="avatar">
+            <h1>Login Here</h1>
+            
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" name="first-name" id="name" placeholder="Введите имя">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" placeholder="Введите телефон">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Введите email">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Введите пароль">
+                <label for="pass">Confirm</label>
+                <input type="password" name="pass" id="confirm-pass" placeholder="Подтвердите пароль">
+                <input type="button" id="button" value="Регистрация">
+            </form>
+
+        </div>
+
+        <script>
+            let name, email, phone, pass;
+            let trueFields;
+            let label = document.createElement('label');
+    
+            button.onclick = function(){
+                trueFields = 0;
+    
+                if (document.getElementById('name').value.match(/^[A-ZА-Я]{4,}$/i)){
+                    name = document.getElementById('name').value;
+                    trueFields++;
+                }
+                if (document.getElementById('email').value.match(/^([a-z0-9]{4,10})+@([a-z]{4,10})+.([a-z]{2,5})$/i)){
+                    email = document.getElementById('email').value;
+                    trueFields++;
+                }
+                if (document.getElementById('phone').value.match(/^\+\(380\)\d{2}\-\d{3}-\d{2}-\d{2}$|^\+380\d{9}$/)){
+                    phone = document.getElementById('phone').value;
+                    trueFields++;
+                }
+                if (document.getElementById('pass').value.match(/^[A-Z0-9]{4,}$/i) == document.getElementById('confirm-pass').value){
+                    pass = document.getElementById('pass').value;
+                    trueFields++;
+                }
+    
+                if (trueFields == 4){
+                    localStorage.setItem('name', name);
+                    localStorage.setItem('email', email);
+                    localStorage.setItem('password', pass);
+                    
+                    location.href = 'login.html';
+                }
+            }
+        </script>
+</body>
+</html>

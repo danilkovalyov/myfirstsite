@@ -1,0 +1,545 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*::before,*::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;margin: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/*-----------------------------------------------------*/
+
+
+body {
+	font-family: sans-serif;
+}
+
+/*    first-base-content    */
+
+.first-base-content{
+    width: 100%;
+    height: 1100px;
+    background: url(../images/joshua-sortino-71vAb1FXB6g-unsplash.jpg) no-repeat ;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 900px 1fr;
+    grid-template-rows: 90px 400px;
+    grid-template-areas:
+    "first-base-content__foto  first-base-content__title"
+    "first-base-content__foto  first-base-content__text"
+    ;
+    padding-top: 200px;
+}
+
+.first-base-content__foto{
+    background: url(../images/depositphotos_216978080-stock-photo-the-happy-business-man-point.png) no-repeat ;
+    background-size: cover;
+    width: 550px;
+    margin-left: 200px;
+    grid-area: first-base-content__foto;
+}
+
+.first-base-content__title{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 28px;
+    max-width: 800px;
+    border-radius: 5px;
+    color: #ABD2E1;
+    background-color: white;
+    grid-area: first-base-content__title;
+}
+
+.first-base-content__text{
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    max-width: 750px;
+    padding-left: 30px;
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 2px black;
+    grid-area: first-base-content__text;
+}
+
+
+/* ---------- INFO ---------- */
+
+.info{
+    max-width: 100%;
+    min-height: 150px;
+    background-color: #FFF9F9;
+}
+
+.info-about_me{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.info-about_me__text{
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 10px;
+    color:rgb(185, 90, 73);
+}
+
+/* ---------- SECOND-BASE ---------- */
+
+.second-base{
+    width: 100%;
+    height: 1100px;
+    background-image: url(../images/jeremy-perkins-7S1yZoFcVV0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.second-base__text-1,.second-base__text-2,.second-base__text-3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+.second-base__paragraph-1,.second-base__paragraph-2,.second-base__paragraph-3{
+    font-size: 24px;
+}
+
+.second-base__title{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 60px;
+}
+
+.second-base__paragraph-1{
+    padding-top: 90px;
+    padding-left: 200px;
+}
+
+.second-base__text-1{
+    padding-left: 200px;
+    max-width: 1100px;
+}
+
+.second-base__paragraph-2{
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 270px;
+}
+
+.second-base__text-2{
+    text-align: center;
+    padding-left: 330px;
+    padding-right: 600px;
+
+}
+
+.second-base__paragraph-3{
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 450px;
+}
+
+.second-base__text-3{
+    text-align: right;
+    padding-left: 600px;
+    padding-right: 450px;
+}
+
+.second-base__row{    
+    text-align: center;
+    margin-top: 90px;
+}
+
+.second-base__personal-program{
+    padding-top: 40px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #172435;
+    max-width: 267px;
+    border-bottom: 2px solid #172435;
+    transition: all 0.3s ease;
+}
+
+.second-base__personal-program:hover{
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    border-bottom: 2px solid #172435
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #837F7F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link__facebook,.link__instagram,.link__twitter{
+    cursor: pointer;
+}
+
+.link__facebook{
+    margin-left: 50px;
+}
+
+.link__twitter{
+    margin-right: 50px;
+}
+
+/* ---------- @MEDIA ---------- */
+
+@media(max-width: 1900px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        grid-template-columns: 850px 1fr;
+    }
+    .first-base-content__foto{
+        margin-left: 150px;
+    }
+    .first-base-content__title{
+        font-size: 40px;
+        max-width: 800px;
+    }
+    .first-base-content__text{
+        line-height: 27px;
+        font-size: 18px;
+        max-width: 750px;
+        padding-top: 35px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+    .second-base__title{
+        padding-top: 60px;
+    }
+    
+    .second-base__paragraph-1{
+        padding-top: 90px;
+        padding-left: 200px;
+    }
+    
+    .second-base__text-1{
+        padding-left: 200px;
+        max-width: 1100px;
+    }
+    
+    .second-base__paragraph-2{
+        text-align: center;
+        padding-top: 100px;
+        padding-right: 270px;
+    }
+    
+    .second-base__text-2{
+        text-align: center;
+        padding-left: 330px;
+        padding-right: 600px;
+    
+    }
+    
+    .second-base__paragraph-3{
+        text-align: right;
+        padding-top: 100px;
+        padding-right: 450px;
+    }
+    
+    .second-base__text-3{
+        text-align: right;
+        padding-left: 600px;
+        padding-right: 450px;
+    }
+    
+
+}
+
+@media(max-width: 1825px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        grid-template-columns: 800px 1fr;
+    }
+    .first-base-content__foto{
+        margin-left: 100px;
+    }
+    .first-base-content__title{
+        margin-left: 20px;
+        font-size: 36px;
+        max-width: 750px;
+    }
+    .first-base-content__text{
+        line-height: 26px;
+        font-size: 18px;
+        max-width: 750px;
+        padding-top: 30px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}
+
+@media(max-width: 1750px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        grid-template-columns: 750px 1fr;
+    }
+    .first-base-content__foto{
+        margin-left: 50px;
+    }
+    .first-base-content__title{
+        margin-left: 40px;
+        padding-top: 25px;
+        font-size: 32px;
+        max-width: 700px;
+        max-height: 80px;
+    }
+    .first-base-content__text{
+        line-height: 25px;
+        font-size: 17px;
+        max-width: 750px;
+        padding-top: 25px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}
+
+@media(max-width: 1675px){
+
+/*    first-base-content    */
+
+    .first-base-content{
+        grid-template-columns: 725px 1fr;
+    }
+    .first-base-content__foto{
+        margin-left: 25px;
+    }
+    .first-base-content__title{
+        margin-left: 65px;
+        padding-top: 22px;
+        font-size: 29px;
+        max-width: 625px;
+        max-height: 70px;
+    }
+    .first-base-content__text{
+        line-height: 25px;
+        font-size: 17px;
+        max-width: 725px;
+        padding-top: 10px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}
+
+@media(max-width: 1600px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        grid-template-columns: 700px 1fr;
+        padding-top: 208px;
+    }
+    .first-base-content__foto{
+        margin-left: 25px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}
+
+@media(max-width: 1525px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        grid-template-columns: 650px 1fr;
+    }
+    .first-base-content__foto{
+        margin-left: 0px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}
+
+@media(max-width: 1475px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        grid-template-columns: 600px 1fr;
+    }
+    .first-base-content__foto{
+        margin-left: 0px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}
+
+@media(max-width: 1350px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        width: 100%;
+        height: 1100px;
+        background: url(../images/joshua-sortino-71vAb1FXB6g-unsplash.jpg) no-repeat ;
+        background-size: 2400px;
+
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 500px 100px 500px;
+        grid-template-areas:
+        "first-base-content__foto"
+        "first-base-content__title"
+        "first-base-content__text "
+        ;
+        padding-top: 50px;
+    }
+    .first-base-content__foto{
+        width: 560px;
+        margin-left: 370px;
+        
+    }
+    
+    .first-base-content__title{
+        text-align: center;
+        margin-left: 440px;
+        padding-top: 22px;
+        font-size: 28px;
+        width: 550px;
+        max-height: 70px;
+    }
+    
+    .first-base-content__text{
+        text-align: center;
+        line-height: 28px;
+        font-size: 18px;
+        max-width: 1100px;
+        padding-left: 420px;
+        padding-top: 10px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}
+
+@media(max-width: 1275px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        background-size: 2300px;
+        padding-top: 50px;
+    }
+    .first-base-content__foto{
+        margin-left: 295px;
+    }
+    
+    .first-base-content__title{
+        margin-left: 365px;
+    }
+    
+    .first-base-content__text{
+        padding-left: 345px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}
+
+@media(max-width: 1200px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        background-size: 2200px;
+        padding-top: 50px;
+    }
+    .first-base-content__foto{
+        margin-left: 240px;
+    }
+    
+    .first-base-content__title{
+        margin-left: 310px;
+    }
+    
+    .first-base-content__text{
+        padding-left: 290px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}
+
+@media(max-width: 1125px){
+
+    /*    first-base-content    */
+
+    .first-base-content{
+        background-size: 2100px;
+        padding-top: 50px;
+    }
+    .first-base-content__foto{
+        margin-left: 180px;
+    }
+    
+    .first-base-content__title{
+        margin-left: 250px;
+    }
+    
+    .first-base-content__text{
+        padding-left: 230px;
+    }
+
+    /* ---------- SECOND-BASE ---------- */
+
+}

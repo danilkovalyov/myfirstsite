@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*::before,*::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;margin: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/*-----------------------------------------------------*/
+
+/*   Blocks   */
+
+body{
+    font-family: sans-serif;
+    background: url(../images/darpan-dodiya-2Wa4T-n2WaU-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.personal-program-blocks{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* ---------- Общие стили для всех блоков ---------- */
+
+.personal-program-blocks__1,.personal-program-blocks__2,.personal-program-blocks__3{
+    margin-top: 200px;
+    height: 456px;
+    width: 326px;
+    background-color: white;
+    border: solid 3px white;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.personal-program-blocks__1 img,.personal-program-blocks__2 img,.personal-program-blocks__3 img{
+    height: 450px;
+    width: 320px;
+    border-radius: 25px;
+}
+
+.personal-program-blocks__1:hover,.personal-program-blocks__2:hover,.personal-program-blocks__3:hover{
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+
+@media(max-width: 1700px){
+    .personal-program-blocks__1,.personal-program-blocks__2,.personal-program-blocks__3{
+        margin-top: 220px;
+        height: 426px;
+        width: 306px;
+    }
+    .personal-program-blocks__1 img,.personal-program-blocks__2 img,.personal-program-blocks__3 img{
+        height: 420px;
+        width: 300px;
+    }
+}
+
+@media(max-width: 1500px){
+    .personal-program-blocks__1,.personal-program-blocks__2,.personal-program-blocks__3{
+        margin-top: 240px;
+        height: 406px;
+        width: 286px;
+    }
+    .personal-program-blocks__1 img,.personal-program-blocks__2 img,.personal-program-blocks__3 img{
+        height: 400px;
+        width: 280px;
+    }
+}
+
+@media(max-width: 1150px){
+
+    body{
+        background-size: 2020px;
+        height: 1200px;
+    }
+    
+    .personal-program-blocks{
+    display: grid;
+    grid-template-rows: 500px 500px;
+    grid-template-areas:
+    "personal-program-blocks__1  personal-program-blocks__2"
+    "personal-program-blocks__3  personal-program-blocks__3"
+    }
+
+    .personal-program-blocks__1,.personal-program-blocks__2,.personal-program-blocks__3{
+        margin-top: 200px;
+        height: 406px;
+        width: 286px;
+    }
+    .personal-program-blocks__1 img,.personal-program-blocks__2 img,.personal-program-blocks__3 img{
+        height: 400px;
+        width: 280px;
+    }
+    .personal-program-blocks__1{
+        grid-area: personal-program-blocks__1;
+    }
+    .personal-program-blocks__2{
+        grid-area: personal-program-blocks__2;
+    }
+    .personal-program-blocks__3{
+        margin-left: 30%;
+        grid-area: personal-program-blocks__3;
+    }
+}
+
+@media(max-width: 900px){
+
+    .personal-program-blocks__1,.personal-program-blocks__2,.personal-program-blocks__3{
+        margin-top: 200px;
+        height: 386px;
+        width: 266px;
+    }
+    .personal-program-blocks__1 img,.personal-program-blocks__2 img,.personal-program-blocks__3 img{
+        height: 380px;
+        width: 260px;
+    }
+
+    .personal-program-blocks__3{
+        margin-left: 29%;
+    }
+}
+
+@media(max-width: 800px){
+
+    .personal-program-blocks__3{
+        margin-left: 28%;
+    }
+}
+/*   Block-2   */
+
+
+/*   Block-3   */
+
+
+
+
+
+
+
+
